@@ -1,0 +1,11 @@
+#DATABASE configuration
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: test
+
+# Server configuration
+server:
+  port: 8080
