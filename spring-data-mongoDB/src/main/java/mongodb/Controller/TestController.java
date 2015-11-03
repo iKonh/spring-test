@@ -35,7 +35,12 @@ public class TestController {
     }
 
     @RequestMapping(value = "/createData", method = RequestMethod.GET)
-    public void createData(@RequestParam("id") String id){
+     public void createData(@RequestParam("id") String id){
         tempDao.createCollection(id);
+    }
+
+    @RequestMapping(value = "/updateData", method = RequestMethod.GET)
+    public void updateData(@RequestParam("id") String id){
+        tempDao.update(id);
     }
 }
