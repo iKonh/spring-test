@@ -28,4 +28,14 @@ public class TestController {
     public void saveData(@RequestParam("id") String id){
         tempDao.save(id);
     }
+
+    @RequestMapping(value = "/dropData", method = RequestMethod.GET)
+     public void dropData(@RequestParam("id") String id){
+        tempDao.drop(id);
+    }
+
+    @RequestMapping(value = "/createData", method = RequestMethod.GET)
+    public void createData(@RequestParam("id") String id){
+        tempDao.createCollection(id);
+    }
 }

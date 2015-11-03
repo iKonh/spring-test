@@ -8,4 +8,8 @@ public interface TempDao {
     public List find(String id);
 
     public void save(String id);
+
+    public void drop(String id);
+
+    public void createCollection(String id);
 }
