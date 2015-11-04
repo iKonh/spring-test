@@ -12,4 +12,8 @@ public interface TempDao {
     public void drop(String id);
 
     public void createCollection(String id);
+
+    public void insert(String id);
+
+    public void update(String id);
 }

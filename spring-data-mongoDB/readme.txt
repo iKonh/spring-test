@@ -1,8 +1,9 @@
-cd /d MongoDB的bin文件夹目录
+设置环境变量
+添加MONGO_HOME mongo根目录
+增加path %MONGO_HOME%\bin
 
-mongod -dbpath {数据存储文件路径}
+执行如下安装mongo服务
+mongod -dbpath %MONGO_HOME%\data\db  --logpath %MONGO_HOME%\log\mongodb.log  --install --serviceName MongoDB
 
-另起cmd
-cd /d MongoDB的bin文件夹目录
-
-mongo
+控制台或者管理界面启动服务
+net start MongoDB
