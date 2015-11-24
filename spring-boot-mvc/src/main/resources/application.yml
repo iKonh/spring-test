@@ -1,0 +1,10 @@
+# Spring configuration
+spring:
+  view:
+    prefix: /WEB-INF/
+    suffix: .jsp
+
+# Server configuration
+server:
+  port: 8080
+
