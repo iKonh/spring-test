@@ -47,6 +47,7 @@
             {{ bean.name + ', ' + bean.age }}
         </li>
     </div>
+
     <div ng-controller="translate">
         <button type="button" ng-click="changeLanguage('zh')" translate="BUTTON_LANG_ZH"></button>
         <button type="button" ng-click="changeLanguage('en')" translate="BUTTON_LANG_EN"></button>
