@@ -32,6 +32,11 @@
                 $translate.use(key);
             };
         });
+        app.controller('check', function ($scope) {
+            $scope.select = function () {
+                $scope.chk = !$scope.chk;
+            };
+        });
     </script>
     <title></title>
 </head>
@@ -45,6 +50,10 @@
     <div ng-controller="translate">
         <button type="button" ng-click="changeLanguage('zh')" translate="BUTTON_LANG_ZH"></button>
         <button type="button" ng-click="changeLanguage('en')" translate="BUTTON_LANG_EN"></button>
+    </div>
+    <div ng-controller="check">
+        <button type="button" ng-click="select()">选择</button>
+        <input type="checkbox" ng-model="chk"/>
     </div>
 </div>
 </body>
