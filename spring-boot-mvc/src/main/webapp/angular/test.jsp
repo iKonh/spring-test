@@ -37,6 +37,10 @@
                 $scope.chk = !$scope.chk;
             };
         });
+        app.controller('accountDataCtrl', function($scope, $http) {
+            $http.get("data.json")
+                    .success(function(response) {$scope.beans = response;});
+        });
     </script>
     <title></title>
 </head>
@@ -55,6 +59,67 @@
     <div ng-controller="check">
         <button type="button" ng-click="select()">选择</button>
         <input type="checkbox" ng-model="chk"/>
+    </div>
+    <div class="box-body" ng-controller="accountDataCtrl">
+        <table id="example" class="table table-bordered table-striped table-hover">
+            <thead>
+            <tr role="row" class="btn-primary">
+                <th></th>
+                <th>
+                    <input type="checkbox">
+                </th>
+                <th>DM配信</th>
+                <th>会員ID</th>
+                <th>名前（漢字）</th>
+                <th>名前（カナ）</th>
+                <th>メールアドレス</th>
+                <th>電話番号</th>
+                <th>郵便番号</th>
+                <th>都道府県</th>
+                <th>住所</th>
+                <th>生年月日</th>
+                <th>登録日</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="bean in beans">
+                <td>{{$index+1}}</td>
+                <td>
+                    <input type="checkbox">
+                </td>
+                <td>{{bean.dm}}</td>
+                <td>{{bean.accountId}}</td>
+                <td>{{bean.name}}</td>
+                <td>{{bean.nameKana}}</td>
+                <td><a href="#">{{bean.mail}}</a></td>
+                <td>{{bean.phoneNo}}</td>
+                <td>{{bean.postalcode}}</td>
+                <td>{{bean.city}}</td>
+                <td>{{bean.address}}</td>
+                <td>{{bean.birth}}</td>
+                <td>{{bean.create}}</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr class="btn-primary">
+                <th></th>
+                <th>
+                    <input type="checkbox">
+                </th>
+                <th>DM配信</th>
+                <th>会員ID</th>
+                <th>名前（漢字）</th>
+                <th>名前（カナ）</th>
+                <th>メールアドレス</th>
+                <th>電話番号</th>
+                <th>郵便番号</th>
+                <th>都道府県</th>
+                <th>住所</th>
+                <th>生年月日</th>
+                <th>登録日</th>
+            </tr>
+            </tfoot>
+        </table>
     </div>
 </div>
 </body>

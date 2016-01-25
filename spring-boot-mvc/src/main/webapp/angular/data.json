@@ -1,0 +1,41 @@
+[
+{
+"dm" : "不1",
+"accountId" : 1234567890,
+"name" : "テスト太郎",
+"nameKana" : "テストタロウ",
+"mail" : "test@test.com",
+"phoneNo" : "080-1234-5678",
+"postalcode" : "123-4567",
+"city" : "東京都",
+"address" : "千代田区1-1-1",
+"birth" : "1990-09-09",
+"create" : "2015-01-01"
+},
+{
+"dm" : "不2",
+"accountId" : 1234567890,
+"name" : "テスト太郎",
+"nameKana" : "テストタロウ",
+"mail" : "test@test.com",
+"phoneNo" : "080-1234-5678",
+"postalcode" : "123-4567",
+"city" : "東京都",
+"address" : "千代田区1-1-1",
+"birth" : "1990-09-09",
+"create" : "2015-01-01"
+},
+{
+"dm" : "不3",
+"accountId" : 1234567890,
+"name" : "テスト太郎",
+"nameKana" : "テストタロウ",
+"mail" : "test@test.com",
+"phoneNo" : "080-1234-5678",
+"postalcode" : "123-4567",
+"city" : "東京都",
+"address" : "千代田区1-1-1",
+"birth" : "1990-09-09",
+"create" : "2015-01-01"
+}
+]
