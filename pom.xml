@@ -12,6 +12,7 @@
         <module>spring-boot-mvc</module>
         <module>spring-data-mongoDB</module>
         <module>spring-data-redis</module>
+        <module>elasticsearch</module>
     </modules>
 
     <properties>

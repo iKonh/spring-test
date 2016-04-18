@@ -1,0 +1,10 @@
+# Server configuration
+server:
+  port: 8080
+elasticsearch:
+  ip: localhost
+  path: /etc/elasticsearch
+  port:
+    tcp: 9300
+    http: 9200
+
