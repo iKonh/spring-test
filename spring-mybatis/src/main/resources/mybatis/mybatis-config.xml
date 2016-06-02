@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <typeAliases>
+        <typeAlias type="mybatis.entity.Book" alias="Book"/>
+    </typeAliases>
+
+    <typeHandlers>
+        <typeHandler handler="mybatis.framework.typeHandler.LocalDateTimeTypeHandler"/>
+    </typeHandlers>
+
+    <mappers>
+        <mapper resource="mapper/BookMapper.xml"/>
+    </mappers>
+
+</configuration>
+
+
