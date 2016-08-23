@@ -9,7 +9,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Controller
 @RequestMapping(value = "/")
@@ -18,6 +17,21 @@ public class WelcomeController {
     @RequestMapping(value = {"/welcome"}, method = RequestMethod.GET)
     public ModelAndView userUpdateInfo() {
         return new ModelAndView("welcome");
+    }
+
+    @RequestMapping(value = {"/welcome_2"}, method = RequestMethod.GET)
+    public String userUpdateInfo_2() {
+        return "redirect:welcome";
+    }
+
+    @RequestMapping(value = {"/welcome_3"}, method = RequestMethod.GET)
+    public String userUpdateInfo_3() {
+        return "forward:welcome";
+    }
+
+    @RequestMapping(value = {"/welcome_4"}, method = RequestMethod.GET)
+    public String userUpdateInfo_4() {
+        return "redirect:http://www.baidu.com";
     }
 
     @RequestMapping(value = {"/test"}, method = RequestMethod.GET)
